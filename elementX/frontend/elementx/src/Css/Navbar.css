@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,500&family=Young+Serif&display=swap');
+
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styles */
+.navbar {
+    height: 9vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-left,
+.navbar-right {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.logo-image {
+    height: 4rem;
+    margin-left: 20px;
+}
+
+.element-button,
+.navbar-left button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 10px;
+    background-color: black;
+    border: none;
+    color: #F2F2F2;
+    font-weight: lighter;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.element-button:hover,
+.navbar-left button:hover {
+    background-color: #333;
+    border-radius: 5px;
+    padding: 8px 10px;
+}
+
+/* Profile icon styles */
+.profile-icon {
+    color: white;
+    border: 1px solid #333;
+    border-radius: 40px;
+    height: 40px;
+    width: 40px;
+    overflow: hidden;
+    background-color: #212121;
+    cursor: pointer;
+}
+
+.profile-letter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.profile-icon:hover {
+    background-color: #F2F2F2;
+    color: black;
+}
+
+/* Media query for smaller screens, adjust as needed */
+@media only screen and (max-width: 600px) {
+    .navbar-left,
+    .navbar-right {
+        width: 100%;
+        justify-content: center;
+        gap: 10px;
+        margin-right: 0;
+    }
+
+    .navbar-left {
+        margin-right: 0;
+    }
+
+    .navbar-left button {
+        font-size: 14px;
+        padding: 5px 8px;
+    }
+
+    .navbar-right {
+        gap: 20px;
+    }
+}

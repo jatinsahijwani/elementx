@@ -1,0 +1,99 @@
+.model-background{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 91vh;
+    top : 9vh;
+    z-index: 1;
+    background-image: linear-gradient(black -10%,#212121);
+    backdrop-filter: blur(5px);
+  }
+  
+  .model-frame{
+    width : 55vw;
+    position: absolute;
+    top : 17%;
+    left : 22%;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #171717;
+    border-radius: 8px;
+    z-index: 1;
+  }
+  .model-frame h1{
+    color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55vw;
+    padding-top: 30px;
+    /* height: 15vh; */
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .create-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 60vh;
+    width: 55vw;
+    overflow: auto;
+  }
+  
+  .item{
+    border : 3px solid #212121;
+    width : 8vw;
+    height: 15vh;
+    border-radius: 5px;
+    margin: 13px;
+    color : white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+    padding : 20px; 
+    gap : 10px;
+  }
+  
+  .create-item button{
+    padding : 8px 12px 8px 12px;
+    border-radius: 8px;
+    border: 0px;
+    background-color: aqua;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .item:hover{
+    border : 3px solid white;
+    text-shadow  : 0 0 10px rgba(77,175,200,0.3),0 0 10px rgba(77,175,200,0.3),0 0 10px rgba(77,175,200,0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+  }
+  
+  .selected-item{
+    border : 3px solid aqua;
+    color : aqua; 
+    text-shadow  : 0 0 10px rgba(77,175,200,0.3),0 0 10px rgba(77,175,200,0.3),0 0 10px rgba(77,175,200,0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width : 8vw;
+    height: 15vh;
+    border-radius: 5px;
+    margin: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+    padding : 20px; 
+    gap : 10px;
+  }
